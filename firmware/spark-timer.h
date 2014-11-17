@@ -4,25 +4,28 @@
 */
 
 // ensure this library description is only included once
-#ifndef spark-timer_h
-#define spark-timer_h
+#ifndef sparktimer_h
+#define sparktimer_h
 
 // library interface description
-class spark-timer
+namespace SparkTimer
 {
-  // user-accessible "public" interface
-  public:
-    spark-timer(long);
-	long getInterval(void);
-	void setInterval(long delay);
-    int isFired(void);
-	void resetTimer(void);
+	class Timer
+	{
+	  // user-accessible "public" interface
+	  public:
+		Timer(long);
+		long getInterval(void);
+		void setInterval(long delay);
+		int isFired(void);
+		void resetTimer(void);
 
-  // library-accessible "private" interface
-  private:
-    unsigned long interval;
-	unsigned long startTime;
-};
+	  // library-accessible "private" interface
+	  private:
+		unsigned long interval;
+		unsigned long startTime;
+	};
+}
 
 #endif
 
