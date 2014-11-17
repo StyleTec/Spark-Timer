@@ -4,13 +4,13 @@
 */
 
 // include this library's description file
-#include "Timer.h"
+#include "spark-timer.h"
 #include "Arduino.h"
 
 // Constructor /////////////////////////////////////////////////////////////////
 // Function that handles the creation and setup of instances
 
-Timer::Timer(long delay)
+spark-timer::spark-timer(long delay)
 {
   // initialize this instance's variables
   interval = delay;
@@ -20,22 +20,22 @@ Timer::Timer(long delay)
 // Public Methods //////////////////////////////////////////////////////////////
 // Functions available in Wiring sketches, this library, and other libraries
 
-long Timer::getInterval(void)
+long spark-timer::getInterval(void)
 {
 	return interval;
 } 
 
-void Timer::setInterval(long delay)
+void spark-timer::setInterval(long delay)
 {
 	interval = delay;
 } 
 
-int Timer::isFired(void)
+int spark-timer::isFired(void)
 {
   if ((millis()-startTime)>interval) { return 1; } else { return 0; }
 }
 
-void Timer::resetTimer(void)
+void spark-timer::resetTimer(void)
 {
   startTime = millis();
 }
