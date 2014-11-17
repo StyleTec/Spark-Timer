@@ -4,15 +4,15 @@
 */
 
 // ensure this library description is only included once
-#ifndef spark-timer_h
-#define spark-timer_h
+#ifndef Timer_h
+#define Timer_h
 
 // library interface description
-class spark-timer
+class Timer
 {
   // user-accessible "public" interface
   public:
-    spark-timer(long);
+    Timer(long);
 	long getInterval(void);
 	void setInterval(long delay);
     int isFired(void);
