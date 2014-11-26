@@ -1,7 +1,7 @@
 {
-  "name": "spark-timer",
+  "name": "Timer",
   "author": "Bastian Mencke <bm@flyinghero.de>",
   "license": "GPL v2.0",
   "version": "0.0.10",
-  "description": "A non-blocking timer library for Spark"
+  "description": "A non-blocking timer library for Arduino/Spark"
 }
