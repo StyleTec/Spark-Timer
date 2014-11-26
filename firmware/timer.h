@@ -5,8 +5,8 @@
 
 
 // ensure this library description is only included once
-#ifndef sparktimer_h
-#define sparktimer_h
+#ifndef Timer_h
+#define Timer_h
 
 // library interface description
 class Timer
@@ -23,7 +23,7 @@ class Timer
   private:
 	unsigned long interval;
 	unsigned long startTime;
-}
+};
 
 #endif
 
